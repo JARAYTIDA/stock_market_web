@@ -2,7 +2,7 @@ import React from 'react'
 
 const Debt = () => {
     return (
-        <div>Debt</div>
+        <div>Mutual-Fund</div>
     )
 }
 

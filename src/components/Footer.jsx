@@ -5,10 +5,10 @@ import {AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
 
 const Footer = () => {
     return (
-        <div>
-            <div className='flex justify-between bg-black text-white text-2xl h-48'>
+        <div className='bg-gradient-to-r from-slate-950 to-slate-800'>
+            <div className='flex justify-between text-white text-2xl h-48'>
                 <div className='underline mx-6 my-6 font-bold text-4xl'>
-                    <Link>
+                    <Link to="/">
                         <h1>PRS</h1>
                     </Link>
                 </div>

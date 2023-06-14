@@ -7,24 +7,39 @@ import {AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
 const Navbar = () => {
     return (
         <div>
-            <div className='flex bg-black text-white text-2xl justify-between'>
+            <div className='flex backdrop-filter backdrop-blur-lg  z-50 backdrop-opacity-100 fixed w-full text-white text-2xl justify-between'>
 
                 <div className='flex mx-6 my-6 font-bold underline text-4xl place-items-center'>
-                    <Link to="/">
+                    <Link to="/" className='text-amber-500'>
                         <h1>PRS</h1>
                     </Link>
                 </div>
                 
-                <div className='flex mx-6 my-6 place-items-center'>
-                    <Link to="/commodity" className='mx-6'>Commodity</Link>
-                    <Link to="/debt" className='mx-6'>Debt</Link>
-                    <Link to="/equity" className='mx-6'>Equity</Link>
+                <div className='flex mx-6 my-6 place-items-center justify-between'>
+                    <div className='mx-6 hover:text-white hover:text-4xl duration-500'>
+                        <Link to='/'>Home</Link>
+                    </div>
+                    <div className='mx-6 hover:text-white hover:text-4xl duration-500'>
+                        <Link to="/commodity">Commodity</Link>
+                    </div>
+                    <div className='mx-6 hover:text-white hover:text-4xl duration-500'>
+                        <Link to="/mutual-fund" >Mutual Fund</Link>
+                    </div>
+                    <div className='mx-6 hover:text-white hover:text-4xl duration-500'>
+                        <Link to="/equity">Equity</Link>
+                    </div>
                 </div>
 
                 <div className='flex mx-6 my-6 place-items-center'>
-                    <Link to = "https://www.twitter.com/"> <FaTwitter className='mx-3'/> </Link>
-                    <Link to = "https://www.instagram.com/"> <AiFillInstagram className='mx-3'/> </Link>
-                    <Link to = "https://www.linkedin.com/"> <AiFillLinkedin className='mx-3' /> </Link>
+                    <div className='mx-3 hover:text-blue-400 hover:text-4xl duration-500'>
+                        <Link to = "https://www.twitter.com/"> <FaTwitter /> </Link>
+                    </div>
+                    <div className='mx-3 hover:text-pink-600 hover:text-4xl duration-500'>
+                        <Link to = "https://www.instagram.com/"> <AiFillInstagram /> </Link>
+                    </div>
+                    <div className='mx-3 hover:text-blue-700 hover:text-4xl duration-500'>
+                        <Link to = "https://www.linkedin.com/"> <AiFillLinkedin  /> </Link>
+                    </div>
                 </div>
 
             </div>

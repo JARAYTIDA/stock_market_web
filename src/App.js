@@ -12,7 +12,7 @@ const App = () => {
                 <Route path = "/" exact element = {<Home/>} />
                 <Route path = "/commodity" element = {<Commodity/>} />
                 <Route path = "/equity" element = {<Equity/>} />
-                <Route path = "/debt" element = {<Debt/>} />
+                <Route path = "/mutual-fund" element = {<Debt/>} />
                 <Route path = "/about-us" element = {<AboutUs/>} />
                 <Route path = "/contact-us" element = {<ContactUs/>} />
                 <Route path = "/privacy-policy" element = {<PrivacyPolicy/>} />
