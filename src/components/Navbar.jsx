@@ -7,7 +7,7 @@ import {AiFillInstagram, AiFillLinkedin} from 'react-icons/ai'
 const Navbar = () => {
     return (
         <div>
-            <div className='flex backdrop-filter backdrop-blur-lg  z-50 backdrop-opacity-100 fixed w-full text-white text-2xl justify-between'>
+            <div className='flex backdrop-filter backdrop-blur-lg  z-50 backdrop-opacity-90 fixed w-full text-white text-2xl justify-between'>
 
                 <div className='flex mx-6 my-6 font-bold underline text-4xl place-items-center'>
                     <Link to="/" className='text-amber-500'>
@@ -20,13 +20,13 @@ const Navbar = () => {
                         <Link to='/'>Home</Link>
                     </div>
                     <div className='mx-6 hover:text-white hover:text-4xl duration-500'>
+                        <Link to="/equity">Equity</Link>
+                    </div>
+                    <div className='mx-6 hover:text-white hover:text-4xl duration-500'>
                         <Link to="/commodity">Commodity</Link>
                     </div>
                     <div className='mx-6 hover:text-white hover:text-4xl duration-500'>
                         <Link to="/mutual-fund" >Mutual Fund</Link>
-                    </div>
-                    <div className='mx-6 hover:text-white hover:text-4xl duration-500'>
-                        <Link to="/equity">Equity</Link>
                     </div>
                 </div>
 
@@ -41,8 +41,8 @@ const Navbar = () => {
                         <Link to = "https://www.linkedin.com/"> <AiFillLinkedin  /> </Link>
                     </div>
                 </div>
-
             </div>
+            
         </div>
     )
 }
