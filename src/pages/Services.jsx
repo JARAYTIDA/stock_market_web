@@ -18,7 +18,7 @@ const Services = () => {
 
         <hr className='mt-11 mb-11 ' />
 
-        <div className='flex flex-row overflow-y-hidden overflow-x-auto'>
+        <div className='flex flex-row overflow-y-hidden overflow-x-auto mx-10 justify-between'>
           <BlogBox_1 />
           <BlogBox_1 />
           <BlogBox_1 />
